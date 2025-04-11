@@ -4,10 +4,9 @@ This project provides a simple yet comprehensive cheat sheet covering CSS select
 
 ## Features
 
-- Basic CSS selectors (Universal, Element, Class, ID)
-- CSS combinators (descendant, child, sibling selectors)
-- Common pseudo-classes
-- Explanation and examples of CSS specificity calculation
+- HTML tables clearly labeled with columns for selector names, formatted selectors, and usage descriptions
+- Custom color scheme using named CSS colors
+- Monospace fonts and custom styling for code examples (HTML tags and CSS properties)
 
 ## Usage
 
@@ -33,7 +32,7 @@ css-cheat-sheet/
 You can expand or modify the cheat sheet easily:
 
 - Add additional CSS selectors or combinators
-- Customize styling in `styles.css`
+- Customize the color scheme using named CSS colors in `styles.css`
 - Make the layout responsive using media queries
 
 ## Contributing

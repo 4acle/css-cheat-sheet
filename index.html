@@ -10,108 +10,38 @@
     <header>
         <h1>CSS Selectors & Specificity Cheat Sheet</h1>
     </header>
+
     <main>
         <section>
-            <h2>CSS Selectors</h2>
+            <h2>Basic Selectors</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Selector</th>
-                        <th>Description</th>
-                        <th>Example</th>
+                        <th>Selector Name</th>
+                        <th>Formatted Selector</th>
+                        <th>Usage Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Universal</td>
                         <td><code>*</code></td>
                         <td>Selects all elements</td>
-                        <td><code>* { margin: 0; }</code></td>
                     </tr>
                     <tr>
-                        <td><code>element</code></td>
-                        <td>Selects elements by tag name></td>
-                        <td><code>p { color: blue; }</code></td>
+                        <td>Element</td>
+                        <td><code>p</code></td>
+                        <td>Selects elements by tag name</td>
                     </tr>
                     <tr>
+                        <td>Class</td>
                         <td><code>.class</code></td>
-                        <td>Selects elements by class name</td>
-                        <td><code>.highlight { background-color: yellow; }</code></td>
+                        <td>Selects elements by class</td>
                     </tr>
                     <tr>
+                        <td>ID</td>
                         <td><code>#id</code></td>
-                        <td>Selects elements by ID</td>
-                        <td><code>#main { padding: 20px; }</code></td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Combinators</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Combinator</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>element descendant</code></td>
-                        <td>Selects descendant elements</td>
-                        <td><code>div p { color: green; }</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>element > child</code></td>
-                        <td>Selects direct child elements</td>
-                        <td><code>ul > li { margin-left: 20px; }</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>element + sibling</code></td>
-                        <td>Selects adjacent sibling elements</td>
-                        <td><code>h2 + p { margin-top: 0; }</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>element ~ sibling</code></td>
-                        <td>Selects sibling elements</td>
-                        <td><code>h2 ~ p { margin-top: 0; }</code></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Pseudo-classes</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pseudo-class</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>:hover</code></td>
-                        <td>Selects elements when hovered over</td>
-                        <td><code>a:hover { color: red; }</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>:nth-child(n)</code></td>
-                        <td>Selects elements based on their position in a parent element</td>
-                        <td><code>li:nth-child(2) { font-weight: bold; }</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>:first-child</code></td>
-                        <td>Selects the first child element</td>
-                        <td><code>p:first-child { font-weight: bold; }</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>:last-child</code></td>
-                        <td>Selects the last child element</td>
-                        <td><code>p:last-child { font-weight: bold; }</code></td>
+                        <td>Selects element by ID</td>
                     </tr>
                 </tbody>
             </table>
@@ -119,19 +49,18 @@
 
         <section>
             <h2>Specificity Calculation</h2>
-            <p> Specificity order: Inline styles > ID > Class > Element</p>
+            <p>Specificity order: Inline Style > ID > Class/Pseudo-class > Element</p>
             <ul>
-                <li><strong>Inline styles</strong>: <code>1000</code></li>
-                <li><strong>ID selectors (#id)</strong>: <code>0100</code></li>
-                <li><strong>Class selectors (.class), attributes ([attr]), pseudo-classes (:hover)</strong>: <code>0010</code></li>
-                <li><strong>Element selectors (div, p, h1), pseudo-elements (::before)</strong>: <code>0001</code></li>
+                <li>Inline styles: <code>1000</code></li>
+                <li>ID selectors (<code>#id</code>): <code>0100</code></li>
+                <li>Class selectors (<code>.class</code>): <code>0010</code></li>
+                <li>Element selectors (<code>div</code>): <code>0001</code></li>
             </ul>
-            <p><strong>Example:</strong> <code>#nav .menu li.active</code> has specificity <code>0-1-2-1</code></p>
         </section>
     </main>
-</body>
 
-<footer>
-    <p>Cheat sheet created by Connor.</p>
-</footer>
+    <footer>
+        <p>Cheat sheet created by Connor.</p>
+    </footer>
+</body>
 </html>
